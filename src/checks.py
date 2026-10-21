@@ -1,12 +1,16 @@
 """
 checks.py
 Deterministic checks on an extracted invoice.
-Plain Python only. No AI is used here, so the same invoice
+Plain Python and SQL only. No AI is used here, so the same invoice
 always gets the same result.
+
+Part 1: checks that look only at the invoice itself
+Part 2: checks that compare the invoice with company records (the database)
 """
 
 from pydantic import BaseModel
 
+from db import find_duplicate, find_po, find_vendor_by_trn
 from schemas import Invoice
 
 VAT_RATE = 0.05      # UAE VAT is 5 percent
@@ -41,7 +45,9 @@ def close(a, b):
     return abs(a - b) <= TOLERANCE
 
 
-# ---------- the 7 checks ----------
+# =====================================================
+# PART 1: checks on the invoice itself
+# =====================================================
 
 def check_required_fields(invoice: Invoice):
     missing = [field for field in REQUIRED_FIELDS if getattr(invoice, field) in (None, "")]
@@ -113,6 +119,60 @@ def check_total(invoice: Invoice):
     return _fail("total", f"Subtotal + VAT is {expected:,.2f}, but total says {invoice.total:,.2f}")
 
 
+# =====================================================
+# PART 2: checks against company records (database)
+# =====================================================
+
+def check_vendor_in_master(invoice: Invoice):
+    if invoice.trn is None:
+        return _fail("vendor_in_master", "Cannot check: TRN is missing")
+    vendor = find_vendor_by_trn(invoice.trn)
+    if vendor is None:
+        return _fail("vendor_in_master", f"TRN {invoice.trn} is not in the vendor master")
+    if invoice.vendor and vendor["name"].strip().lower() != invoice.vendor.strip().lower():
+        return _fail(
+            "vendor_in_master",
+            f"TRN belongs to '{vendor['name']}', but the invoice says '{invoice.vendor}'",
+        )
+    return _pass("vendor_in_master", f"Vendor found in master: {vendor['name']}")
+
+
+def check_po_exists(invoice: Invoice):
+    if not invoice.po_number:
+        return _fail("po_exists", "Cannot check: PO number is missing")
+    po = find_po(invoice.po_number)
+    if po is None:
+        return _fail("po_exists", f"{invoice.po_number} was not found in the purchase orders")
+    return _pass("po_exists", f"{invoice.po_number} exists (status: {po['status']})")
+
+
+def check_po_amount(invoice: Invoice):
+    if not invoice.po_number or invoice.total is None:
+        return _fail("po_amount", "Cannot check: PO number or total missing")
+    po = find_po(invoice.po_number)
+    if po is None:
+        return _fail("po_amount", "Cannot check: the PO was not found")
+    if close(po["po_amount"], invoice.total):
+        return _pass("po_amount", f"Invoice total matches the PO amount ({po['po_amount']:,.2f})")
+    return _fail(
+        "po_amount",
+        f"Invoice total is {invoice.total:,.2f}, but the PO amount is {po['po_amount']:,.2f}",
+    )
+
+
+def check_not_duplicate(invoice: Invoice):
+    if not invoice.invoice_number or not invoice.trn:
+        return _fail("not_duplicate", "Cannot check: invoice number or TRN missing")
+    earlier = find_duplicate(invoice.invoice_number, invoice.trn)
+    if earlier:
+        return _fail(
+            "not_duplicate",
+            f"{invoice.invoice_number} from this vendor was already processed "
+            f"on {earlier['processed_at']} (decision: {earlier['decision']})",
+        )
+    return _pass("not_duplicate", "This invoice number has not been seen before for this vendor")
+
+
 ALL_CHECKS = [
     check_required_fields,
     check_trn_format,
@@ -121,6 +181,10 @@ ALL_CHECKS = [
     check_subtotal,
     check_vat,
     check_total,
+    check_vendor_in_master,
+    check_po_exists,
+    check_po_amount,
+    check_not_duplicate,
 ]
 
 
