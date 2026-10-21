@@ -1,0 +1,35 @@
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets (API keys). NEVER upload this
+.env
+
+# Local databases and vector store (we can rebuild them)
+chroma_db/
+*.db
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+Thumbs.db# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Secrets (API keys). NEVER upload this
+.env
+
+# Local databases and vector store (we can rebuild them)
+chroma_db/
+*.db
+
+# VS Code and OS files
+.vscode/
+.DS_Store
+Thumbs.db
