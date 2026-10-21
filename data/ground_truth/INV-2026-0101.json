@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0101",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1099",
+  "invoice_date": "2026-07-17",
+  "due_date": "2026-08-16",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 4,
+      "unit_price": 750.0,
+      "line_total": 3000.0
+    }
+  ],
+  "subtotal": 8200.0,
+  "vat": 410.0,
+  "total": 8610.0,
+  "po_amount": 8610.0,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0101.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

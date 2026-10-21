@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0176",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1166",
+  "invoice_date": "2026-08-03",
+  "due_date": "2026-10-02",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 10,
+      "unit_price": 65.0,
+      "line_total": 650.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 1,
+      "unit_price": 210.0,
+      "line_total": 210.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 5,
+      "unit_price": 320.0,
+      "line_total": 1600.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 4,
+      "unit_price": 140.0,
+      "line_total": 560.0
+    }
+  ],
+  "subtotal": 3020.0,
+  "vat": 151.0,
+  "total": 3171.0,
+  "po_amount": 3171.0,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0176.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0186",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1175",
+  "invoice_date": "2026-03-09",
+  "due_date": "2026-04-23",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 10,
+      "unit_price": 5200.0,
+      "line_total": 52000.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 8,
+      "unit_price": 65.0,
+      "line_total": 520.0
+    }
+  ],
+  "subtotal": 57920.0,
+  "vat": 2896.0,
+  "total": 60816.0,
+  "po_amount": 60816.0,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0186.pdf",
+  "labels": {
+    "error_type": "over_approval_limit",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

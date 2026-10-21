@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0189",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1177",
+  "invoice_date": "2026-06-11",
+  "due_date": "2026-07-26",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 4,
+      "unit_price": 140.0,
+      "line_total": 560.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 10,
+      "unit_price": 85.0,
+      "line_total": 850.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 8,
+      "unit_price": 38.0,
+      "line_total": 304.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 7,
+      "unit_price": 750.0,
+      "line_total": 5250.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 2,
+      "unit_price": 450.0,
+      "line_total": 900.0
+    }
+  ],
+  "subtotal": 7864.0,
+  "vat": 393.2,
+  "total": 8257.2,
+  "po_amount": 8257.2,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0189.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

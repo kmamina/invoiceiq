@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0118",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1115",
+  "invoice_date": "2026-06-19",
+  "due_date": "2026-08-18",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 4,
+      "unit_price": 210.0,
+      "line_total": 840.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 5,
+      "unit_price": 750.0,
+      "line_total": 3750.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9,
+      "unit_price": 320.0,
+      "line_total": 2880.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 9,
+      "unit_price": 450.0,
+      "line_total": 4050.0
+    }
+  ],
+  "subtotal": 11520.0,
+  "vat": 576.0,
+  "total": 12096.0,
+  "po_amount": 11875.5,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0155.pdf",
+  "labels": {
+    "error_type": "repeated_invoice_number",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": "INV-2026-0118",
+    "missing_field": null
+  }
+}

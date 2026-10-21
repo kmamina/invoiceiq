@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0146",
+  "vendor": "Henderson Inc LLC",
+  "vendor_address": "Office 949, Davis Tower, Business Bay, Dubai, UAE",
+  "trn": "100559407816184",
+  "po_number": "PO-1138",
+  "invoice_date": "2026-04-29",
+  "due_date": "2026-06-28",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 6,
+      "unit_price": 320.0,
+      "line_total": 1920.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    }
+  ],
+  "subtotal": 12320.0,
+  "vat": 616.0,
+  "total": 12936.0,
+  "po_amount": 12936.0,
+  "po_in_master": true,
+  "po_vendor_name": "Henderson Inc LLC",
+  "po_trn": "100559407816184",
+  "pdf_file": "INV-2026-0146.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

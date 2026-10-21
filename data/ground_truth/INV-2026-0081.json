@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0081",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1081",
+  "invoice_date": "2026-08-04",
+  "due_date": "2026-09-03",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 3,
+      "unit_price": 65.0,
+      "line_total": 195.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 1,
+      "unit_price": 140.0,
+      "line_total": 140.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 2,
+      "unit_price": 450.0,
+      "line_total": 900.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    }
+  ],
+  "subtotal": 5200.0,
+  "vat": 260.0,
+  "total": 5460.0,
+  "po_amount": 5460.0,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0081.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

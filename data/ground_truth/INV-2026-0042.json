@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0042",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1042",
+  "invoice_date": "2026-08-22",
+  "due_date": "2026-09-21",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 1,
+      "unit_price": 65.0,
+      "line_total": 65.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 2,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 7,
+      "unit_price": 750.0,
+      "line_total": 5250.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 3,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    }
+  ],
+  "subtotal": 11645.0,
+  "vat": 582.25,
+  "total": 12227.25,
+  "po_amount": 12227.25,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0042.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

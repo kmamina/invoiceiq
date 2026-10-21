@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0103",
+  "vendor": "Fowler Inc LLC",
+  "vendor_address": "Office 130, Figueroa Tower, Business Bay, Dubai, UAE",
+  "trn": "100104332181960",
+  "po_number": "PO-1101",
+  "invoice_date": "2026-08-30",
+  "due_date": "2026-09-29",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9,
+      "unit_price": 320.0,
+      "line_total": 2880.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 10,
+      "unit_price": 65.0,
+      "line_total": 650.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 4,
+      "unit_price": 450.0,
+      "line_total": 1800.0
+    }
+  ],
+  "subtotal": 12080.0,
+  "vat": 604.0,
+  "total": 12684.0,
+  "po_amount": 12684.0,
+  "po_in_master": true,
+  "po_vendor_name": "Fowler Inc LLC",
+  "po_trn": "100104332181960",
+  "pdf_file": "INV-2026-0127.pdf",
+  "labels": {
+    "error_type": "duplicate",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": "INV-2026-0103",
+    "missing_field": null
+  }
+}

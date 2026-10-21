@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0174",
+  "vendor": "Sanchez and Sons LLC",
+  "vendor_address": "Office 703, Doyle Tower, Business Bay, Dubai, UAE",
+  "trn": "100133890838637",
+  "po_number": "PO-1164",
+  "invoice_date": "2026-04-19",
+  "due_date": "2026-05-19",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 3,
+      "unit_price": 140.0,
+      "line_total": 420.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 2,
+      "unit_price": 210.0,
+      "line_total": 420.0
+    }
+  ],
+  "subtotal": 4040.0,
+  "vat": 202.0,
+  "total": 4242.0,
+  "po_amount": 4242.0,
+  "po_in_master": true,
+  "po_vendor_name": "Sanchez and Sons LLC",
+  "po_trn": "100133890838637",
+  "pdf_file": "INV-2026-0174.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0047",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1047",
+  "invoice_date": "2026-01-20",
+  "due_date": "2026-02-19",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9,
+      "unit_price": 320.0,
+      "line_total": 2880.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 5,
+      "unit_price": 450.0,
+      "line_total": 2250.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 3,
+      "unit_price": 210.0,
+      "line_total": 630.0
+    }
+  ],
+  "subtotal": 5760.0,
+  "vat": 288.0,
+  "total": 6048.0,
+  "po_amount": 6048.0,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0047.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

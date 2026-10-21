@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0157",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1148",
+  "invoice_date": "2026-05-27",
+  "due_date": "2026-06-26",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 1,
+      "unit_price": 750.0,
+      "line_total": 750.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 10,
+      "unit_price": 38.0,
+      "line_total": 380.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 8,
+      "unit_price": 210.0,
+      "line_total": 1680.0
+    }
+  ],
+  "subtotal": 8210.0,
+  "vat": 410.5,
+  "total": 8620.5,
+  "po_amount": 8620.5,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0157.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

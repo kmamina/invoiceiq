@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0085",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1085",
+  "invoice_date": "2026-06-07",
+  "due_date": "2026-07-22",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 4,
+      "unit_price": 210.0,
+      "line_total": 840.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 3,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 6,
+      "unit_price": 65.0,
+      "line_total": 390.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 7,
+      "unit_price": 320.0,
+      "line_total": 2240.0
+    }
+  ],
+  "subtotal": 22670.0,
+  "vat": 1133.5,
+  "total": 23803.5,
+  "po_amount": 23803.5,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0085.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

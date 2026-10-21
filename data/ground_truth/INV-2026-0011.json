@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0011",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1011",
+  "invoice_date": "2026-08-06",
+  "due_date": "2026-09-20",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 4,
+      "unit_price": 320.0,
+      "line_total": 1280.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 7,
+      "unit_price": 450.0,
+      "line_total": 3150.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 8,
+      "unit_price": 750.0,
+      "line_total": 6000.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 1,
+      "unit_price": 85.0,
+      "line_total": 85.0
+    }
+  ],
+  "subtotal": 15715.0,
+  "vat": 785.75,
+  "total": 16500.75,
+  "po_amount": 16500.75,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0011.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

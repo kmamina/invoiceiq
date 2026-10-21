@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0154",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1146",
+  "invoice_date": "2026-06-04",
+  "due_date": "2026-07-19",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 6,
+      "unit_price": 38.0,
+      "line_total": 228.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 7,
+      "unit_price": 750.0,
+      "line_total": 5250.0
+    }
+  ],
+  "subtotal": 5478.0,
+  "vat": 273.9,
+  "total": 5751.9,
+  "po_amount": 5751.9,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0154.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

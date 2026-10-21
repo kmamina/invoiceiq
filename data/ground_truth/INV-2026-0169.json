@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0169",
+  "vendor": "Fowler Inc LLC",
+  "vendor_address": "Office 130, Figueroa Tower, Business Bay, Dubai, UAE",
+  "trn": "100104332181960",
+  "po_number": "PO-1159",
+  "invoice_date": "2026-08-16",
+  "due_date": "2026-09-15",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 6,
+      "unit_price": 320.0,
+      "line_total": 1920.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    }
+  ],
+  "subtotal": 5520.0,
+  "vat": 276.0,
+  "total": 5796.0,
+  "po_amount": 5796.0,
+  "po_in_master": true,
+  "po_vendor_name": "Fowler Inc LLC",
+  "po_trn": "100104332181960",
+  "pdf_file": "INV-2026-0169.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

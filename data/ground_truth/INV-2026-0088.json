@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0088",
+  "vendor": "Sanchez and Sons LLC",
+  "vendor_address": "Office 703, Doyle Tower, Business Bay, Dubai, UAE",
+  "trn": "100133890838637",
+  "po_number": "PO-9144",
+  "invoice_date": "2026-04-14",
+  "due_date": "2026-05-14",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 4,
+      "unit_price": 320.0,
+      "line_total": 1280.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 8,
+      "unit_price": 85.0,
+      "line_total": 680.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 2,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    }
+  ],
+  "subtotal": 7490.0,
+  "vat": 374.5,
+  "total": 7864.5,
+  "po_amount": null,
+  "po_in_master": false,
+  "po_vendor_name": "Sanchez and Sons LLC",
+  "po_trn": "100133890838637",
+  "pdf_file": "INV-2026-0088.pdf",
+  "labels": {
+    "error_type": "po_not_found",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

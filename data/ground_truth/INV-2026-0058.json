@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0058",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1058",
+  "invoice_date": "2026-01-15",
+  "due_date": "2026-03-01",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 6,
+      "unit_price": 65.0,
+      "line_total": 390.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 2,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    }
+  ],
+  "subtotal": 560.0,
+  "vat": 28.0,
+  "total": 588.0,
+  "po_amount": 588.0,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0058.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

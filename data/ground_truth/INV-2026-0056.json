@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0056",
+  "vendor": "Fowler Inc LLC",
+  "vendor_address": "Office 130, Figueroa Tower, Business Bay, Dubai, UAE",
+  "trn": "100104332181960",
+  "po_number": null,
+  "invoice_date": "2026-02-11",
+  "due_date": "2026-03-13",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 9,
+      "unit_price": 38.0,
+      "line_total": 342.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 3,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 2,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    }
+  ],
+  "subtotal": 16112.0,
+  "vat": 805.6,
+  "total": 16917.6,
+  "po_amount": 16917.6,
+  "po_in_master": true,
+  "po_vendor_name": "Fowler Inc LLC",
+  "po_trn": "100104332181960",
+  "pdf_file": "INV-2026-0056.pdf",
+  "labels": {
+    "error_type": "missing_field",
+    "expected_route": "HUMAN_REVIEW",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": "po_number"
+  }
+}

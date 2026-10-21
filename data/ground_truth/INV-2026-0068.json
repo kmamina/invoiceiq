@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0068",
+  "vendor": "Henderson Inc LLC",
+  "vendor_address": "Office 949, Davis Tower, Business Bay, Dubai, UAE",
+  "trn": null,
+  "po_number": "PO-1068",
+  "invoice_date": "2026-04-23",
+  "due_date": "2026-06-22",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 1,
+      "unit_price": 210.0,
+      "line_total": 210.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    }
+  ],
+  "subtotal": 5410.0,
+  "vat": 270.5,
+  "total": 5680.5,
+  "po_amount": 5680.5,
+  "po_in_master": true,
+  "po_vendor_name": "Henderson Inc LLC",
+  "po_trn": "100559407816184",
+  "pdf_file": "INV-2026-0068.pdf",
+  "labels": {
+    "error_type": "missing_field",
+    "expected_route": "HUMAN_REVIEW",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": "trn"
+  }
+}

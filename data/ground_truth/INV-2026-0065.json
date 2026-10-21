@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0065",
+  "vendor": "Wilson Trading FZE",
+  "vendor_address": "Office 959, Sheikh Zayed Road, Dubai, UAE",
+  "trn": "100299239813370",
+  "po_number": "PO-1065",
+  "invoice_date": "2026-08-31",
+  "due_date": "2026-10-30",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 10,
+      "unit_price": 210.0,
+      "line_total": 2100.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 3,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    }
+  ],
+  "subtotal": 17700.0,
+  "vat": 885.0,
+  "total": 18585.0,
+  "po_amount": 18585.0,
+  "po_in_master": true,
+  "po_vendor_name": "Wilson Trading FZE",
+  "po_trn": "100299239813370",
+  "pdf_file": "INV-2026-0065.pdf",
+  "labels": {
+    "error_type": "unknown_vendor",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

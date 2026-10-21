@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0014",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1014",
+  "invoice_date": "2026-03-09",
+  "due_date": "2026-05-08",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 5,
+      "unit_price": 38.0,
+      "line_total": 190.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 7,
+      "unit_price": 140.0,
+      "line_total": 980.0
+    }
+  ],
+  "subtotal": 11120.0,
+  "vat": 556.0,
+  "total": 11676.0,
+  "po_amount": 11676.0,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0014.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

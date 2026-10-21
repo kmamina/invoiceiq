@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0141",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1133",
+  "invoice_date": "2026-02-12",
+  "due_date": "2026-03-29",
+  "payment_terms": null,
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 1,
+      "unit_price": 85.0,
+      "line_total": 85.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 4,
+      "unit_price": 750.0,
+      "line_total": 3000.0
+    }
+  ],
+  "subtotal": 3085.0,
+  "vat": 154.25,
+  "total": 3239.25,
+  "po_amount": 3239.25,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0141.pdf",
+  "labels": {
+    "error_type": "missing_field",
+    "expected_route": "HUMAN_REVIEW",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": "payment_terms"
+  }
+}

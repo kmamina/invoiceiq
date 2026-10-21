@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0017",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1017",
+  "invoice_date": "2026-04-03",
+  "due_date": "2026-04-17",
+  "payment_terms": "Net 14 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 8,
+      "unit_price": 140.0,
+      "line_total": 1120.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 7,
+      "unit_price": 65.0,
+      "line_total": 455.0
+    }
+  ],
+  "subtotal": 1575.0,
+  "vat": 78.75,
+  "total": 1653.75,
+  "po_amount": 1653.75,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0017.pdf",
+  "labels": {
+    "error_type": "payment_terms_violation",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

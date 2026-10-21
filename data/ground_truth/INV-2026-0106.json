@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0106",
+  "vendor": "Fowler Inc LLC",
+  "vendor_address": "Office 130, Figueroa Tower, Business Bay, Dubai, UAE",
+  "trn": "100104332181960",
+  "po_number": "PO-1104",
+  "invoice_date": "2026-01-10",
+  "due_date": "2026-02-09",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5600.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 10,
+      "unit_price": 85.0,
+      "line_total": 850.0
+    }
+  ],
+  "subtotal": 6050.0,
+  "vat": 302.5,
+  "total": 6352.5,
+  "po_amount": 6352.5,
+  "po_in_master": true,
+  "po_vendor_name": "Fowler Inc LLC",
+  "po_trn": "100104332181960",
+  "pdf_file": "INV-2026-0106.pdf",
+  "labels": {
+    "error_type": "bad_line_math",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

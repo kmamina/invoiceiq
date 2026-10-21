@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0031",
+  "vendor": "Sanchez and Sons LLC",
+  "vendor_address": "Office 703, Doyle Tower, Business Bay, Dubai, UAE",
+  "trn": "100133890838637",
+  "po_number": "PO-1031",
+  "invoice_date": "2026-01-01",
+  "due_date": "2026-01-31",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 4,
+      "unit_price": 140.0,
+      "line_total": 560.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 2,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 1,
+      "unit_price": 450.0,
+      "line_total": 450.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 3,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    }
+  ],
+  "subtotal": 19940.0,
+  "vat": 997.0,
+  "total": 20937.0,
+  "po_amount": 20937.0,
+  "po_in_master": true,
+  "po_vendor_name": "Sanchez and Sons LLC",
+  "po_trn": "100133890838637",
+  "pdf_file": "INV-2026-0031.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

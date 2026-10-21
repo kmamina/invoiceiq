@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0094",
+  "vendor": "Henderson Inc LLC",
+  "vendor_address": "Office 949, Davis Tower, Business Bay, Dubai, UAE",
+  "trn": "100559407816184",
+  "po_number": "PO-1093",
+  "invoice_date": "2026-05-27",
+  "due_date": "2026-07-26",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 7,
+      "unit_price": 210.0,
+      "line_total": 1470.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 9,
+      "unit_price": 38.0,
+      "line_total": 342.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 7,
+      "unit_price": 85.0,
+      "line_total": 595.0
+    }
+  ],
+  "subtotal": 6007.0,
+  "vat": 300.35,
+  "total": 6307.35,
+  "po_amount": 6307.35,
+  "po_in_master": true,
+  "po_vendor_name": "Henderson Inc LLC",
+  "po_trn": "100559407816184",
+  "pdf_file": "INV-2026-0094.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

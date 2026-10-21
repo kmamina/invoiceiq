@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0009",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1009",
+  "invoice_date": "2026-02-10",
+  "due_date": "2026-03-27",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 3,
+      "unit_price": 65.0,
+      "line_total": 195.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 6,
+      "unit_price": 85.0,
+      "line_total": 510.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 4,
+      "unit_price": 320.0,
+      "line_total": 1280.0
+    }
+  ],
+  "subtotal": 1985.0,
+  "vat": 99.25,
+  "total": 2084.25,
+  "po_amount": 2084.25,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0009.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

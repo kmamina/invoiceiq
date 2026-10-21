@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0165",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1155",
+  "invoice_date": "2026-07-02",
+  "due_date": "2026-08-01",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 6,
+      "unit_price": 65.0,
+      "line_total": 390.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 3,
+      "unit_price": 750.0,
+      "line_total": 2250.0
+    }
+  ],
+  "subtotal": 3405.0,
+  "vat": 170.25,
+  "total": 3575.25,
+  "po_amount": 3575.25,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0165.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

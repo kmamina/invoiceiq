@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0142",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1134",
+  "invoice_date": "2026-03-04",
+  "due_date": "2026-04-03",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 6,
+      "unit_price": 38.0,
+      "line_total": 228.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 4,
+      "unit_price": 210.0,
+      "line_total": 840.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 1,
+      "unit_price": 450.0,
+      "line_total": 450.0
+    }
+  ],
+  "subtotal": 2283.0,
+  "vat": 114.15,
+  "total": 2397.15,
+  "po_amount": 2397.15,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0185.pdf",
+  "labels": {
+    "error_type": "duplicate",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": "INV-2026-0142",
+    "missing_field": null
+  }
+}

@@ -3,44 +3,51 @@
   "vendor": "Barnes Group LLC",
   "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
   "trn": "100764835030564",
-  "po_number": "PO-1382",
-  "invoice_date": "2026-03-22",
-  "due_date": "2026-04-21",
+  "po_number": "PO-1003",
+  "invoice_date": "2026-01-25",
+  "due_date": "2026-02-24",
   "payment_terms": "Net 30 days",
   "currency": "AED",
   "line_items": [
     {
-      "description": "A4 Copy Paper (box of 5 reams)",
-      "quantity": 5,
-      "unit_price": 85.0,
-      "line_total": 425.0
-    },
-    {
       "description": "Laptop Docking Station",
-      "quantity": 9,
+      "quantity": 6,
       "unit_price": 450.0,
-      "line_total": 4050.0
+      "line_total": 2700.0
     },
     {
-      "description": "Office Chair (ergonomic)",
-      "quantity": 10,
-      "unit_price": 750.0,
-      "line_total": 7500.0
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9,
+      "unit_price": 320.0,
+      "line_total": 2880.0
     },
     {
-      "description": "Courier Service (per shipment)",
-      "quantity": 4,
-      "unit_price": 65.0,
-      "line_total": 260.0
-    },
-    {
-      "description": "Printing Services (per 1000 pages)",
+      "description": "Annual Software Support",
       "quantity": 3,
-      "unit_price": 140.0,
-      "line_total": 420.0
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
     }
   ],
-  "subtotal": 12655.0,
-  "vat": 632.75,
-  "total": 13287.75
+  "subtotal": 26580.0,
+  "vat": 1329.0,
+  "total": 27909.0,
+  "po_amount": 27909.0,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0003.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
 }

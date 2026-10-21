@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0159",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1149",
+  "invoice_date": "2026-08-16",
+  "due_date": "2026-09-15",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 10,
+      "unit_price": 5200.0,
+      "line_total": 52000.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 6,
+      "unit_price": 85.0,
+      "line_total": 510.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 1,
+      "unit_price": 210.0,
+      "line_total": 210.0
+    }
+  ],
+  "subtotal": 52720.0,
+  "vat": 2636.0,
+  "total": 55356.0,
+  "po_amount": 55356.0,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0159.pdf",
+  "labels": {
+    "error_type": "over_approval_limit",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

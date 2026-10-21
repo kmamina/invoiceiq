@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0018",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1018",
+  "invoice_date": "2026-04-30",
+  "due_date": "2026-05-30",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 1,
+      "unit_price": 65.0,
+      "line_total": 65.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 9,
+      "unit_price": 38.0,
+      "line_total": 342.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 10,
+      "unit_price": 450.0,
+      "line_total": 4500.0
+    }
+  ],
+  "subtotal": 4907.0,
+  "vat": 245.35,
+  "total": 5152.35,
+  "po_amount": 5152.35,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0018.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

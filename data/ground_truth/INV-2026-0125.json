@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0125",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1122",
+  "invoice_date": "2026-07-24",
+  "due_date": "2026-09-07",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 6,
+      "unit_price": 65.0,
+      "line_total": 390.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 6,
+      "unit_price": 450.0,
+      "line_total": 2700.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 8,
+      "unit_price": 750.0,
+      "line_total": 6000.0
+    }
+  ],
+  "subtotal": 10890.0,
+  "vat": 544.5,
+  "total": 11434.5,
+  "po_amount": 11434.5,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0125.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

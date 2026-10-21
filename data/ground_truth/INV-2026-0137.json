@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0137",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-9472",
+  "invoice_date": "2026-04-15",
+  "due_date": "2026-05-30",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 6,
+      "unit_price": 750.0,
+      "line_total": 4500.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 1,
+      "unit_price": 65.0,
+      "line_total": 65.0
+    }
+  ],
+  "subtotal": 18565.0,
+  "vat": 928.25,
+  "total": 19493.25,
+  "po_amount": null,
+  "po_in_master": false,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0137.pdf",
+  "labels": {
+    "error_type": "po_not_found",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

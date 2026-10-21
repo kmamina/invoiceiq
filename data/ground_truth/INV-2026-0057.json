@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0057",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1057",
+  "invoice_date": "2026-05-10",
+  "due_date": "2026-06-24",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 1,
+      "unit_price": 320.0,
+      "line_total": 320.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 4,
+      "unit_price": 38.0,
+      "line_total": 152.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 1,
+      "unit_price": 140.0,
+      "line_total": 140.0
+    }
+  ],
+  "subtotal": 612.0,
+  "vat": 30.6,
+  "total": 642.6,
+  "po_amount": 578.34,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0057.pdf",
+  "labels": {
+    "error_type": "po_amount_mismatch",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

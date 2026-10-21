@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0099",
+  "vendor": "Fowler Inc LLC",
+  "vendor_address": "Office 130, Figueroa Tower, Business Bay, Dubai, UAE",
+  "trn": "100104332181960",
+  "po_number": "PO-1097",
+  "invoice_date": "2026-08-30",
+  "due_date": "2026-09-29",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 3,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 6,
+      "unit_price": 38.0,
+      "line_total": 228.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 2,
+      "unit_price": 320.0,
+      "line_total": 640.0
+    }
+  ],
+  "subtotal": 16468.0,
+  "vat": 823.4,
+  "total": 17541.4,
+  "po_amount": 17291.4,
+  "po_in_master": true,
+  "po_vendor_name": "Fowler Inc LLC",
+  "po_trn": "100104332181960",
+  "pdf_file": "INV-2026-0099.pdf",
+  "labels": {
+    "error_type": "wrong_total",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

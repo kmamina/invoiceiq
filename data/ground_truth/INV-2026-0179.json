@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0179",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1169",
+  "invoice_date": "2026-08-16",
+  "due_date": "2026-10-15",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 5,
+      "unit_price": 65.0,
+      "line_total": 325.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 2,
+      "unit_price": 140.0,
+      "line_total": 280.0
+    }
+  ],
+  "subtotal": 605.0,
+  "vat": 30.25,
+  "total": 635.25,
+  "po_amount": 635.25,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0179.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

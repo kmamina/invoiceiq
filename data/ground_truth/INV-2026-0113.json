@@ -1,0 +1,41 @@
+{
+  "invoice_number": "INV-2026-0113",
+  "vendor": "Henderson Inc LLC",
+  "vendor_address": "Office 949, Davis Tower, Business Bay, Dubai, UAE",
+  "trn": null,
+  "po_number": "PO-1110",
+  "invoice_date": "2026-01-20",
+  "due_date": "2026-03-21",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 4,
+      "unit_price": 450.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 1,
+      "unit_price": 85.0,
+      "line_total": 85.0
+    }
+  ],
+  "subtotal": 1885.0,
+  "vat": 94.25,
+  "total": 1979.25,
+  "po_amount": 1979.25,
+  "po_in_master": true,
+  "po_vendor_name": "Henderson Inc LLC",
+  "po_trn": "100559407816184",
+  "pdf_file": "INV-2026-0113.pdf",
+  "labels": {
+    "error_type": "missing_field",
+    "expected_route": "HUMAN_REVIEW",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": "trn"
+  }
+}

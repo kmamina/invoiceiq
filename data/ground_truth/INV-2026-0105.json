@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0105",
+  "vendor": "Henderson Inc LLC",
+  "vendor_address": "Office 949, Davis Tower, Business Bay, Dubai, UAE",
+  "trn": "100559407816184",
+  "po_number": "PO-1103",
+  "invoice_date": "2026-02-15",
+  "due_date": "2026-04-16",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 10,
+      "unit_price": 38.0,
+      "line_total": 380.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 10,
+      "unit_price": 210.0,
+      "line_total": 2100.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 8,
+      "unit_price": 450.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 5,
+      "unit_price": 140.0,
+      "line_total": 700.0
+    }
+  ],
+  "subtotal": 12180.0,
+  "vat": 1218.0,
+  "total": 13398.0,
+  "po_amount": 12789.0,
+  "po_in_master": true,
+  "po_vendor_name": "Henderson Inc LLC",
+  "po_trn": "100559407816184",
+  "pdf_file": "INV-2026-0105.pdf",
+  "labels": {
+    "error_type": "wrong_vat",
+    "expected_route": "FLAGGED",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

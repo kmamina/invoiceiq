@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0079",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1079",
+  "invoice_date": "2026-04-16",
+  "due_date": "2026-06-15",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 9,
+      "unit_price": 450.0,
+      "line_total": 4050.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 9,
+      "unit_price": 38.0,
+      "line_total": 342.0
+    }
+  ],
+  "subtotal": 7592.0,
+  "vat": 379.6,
+  "total": 7971.6,
+  "po_amount": 7971.6,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0079.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

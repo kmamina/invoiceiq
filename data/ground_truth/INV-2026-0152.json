@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0152",
+  "vendor": "Sanchez and Sons LLC",
+  "vendor_address": "Office 703, Doyle Tower, Business Bay, Dubai, UAE",
+  "trn": "100133890838637",
+  "po_number": "PO-1144",
+  "invoice_date": "2026-07-17",
+  "due_date": "2026-08-16",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 2,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 10,
+      "unit_price": 140.0,
+      "line_total": 1400.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 7,
+      "unit_price": 450.0,
+      "line_total": 3150.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 8,
+      "unit_price": 750.0,
+      "line_total": 6000.0
+    }
+  ],
+  "subtotal": 20950.0,
+  "vat": 1047.5,
+  "total": 21997.5,
+  "po_amount": 21997.5,
+  "po_in_master": true,
+  "po_vendor_name": "Sanchez and Sons LLC",
+  "po_trn": "100133890838637",
+  "pdf_file": "INV-2026-0152.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0060",
+  "vendor": "Pacheco Inc LLC",
+  "vendor_address": "Office 651, Blake Tower, Business Bay, Dubai, UAE",
+  "trn": "100395376724238",
+  "po_number": "PO-1060",
+  "invoice_date": "2026-08-14",
+  "due_date": "2026-10-13",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 5,
+      "unit_price": 85.0,
+      "line_total": 425.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 2,
+      "unit_price": 320.0,
+      "line_total": 640.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 8,
+      "unit_price": 65.0,
+      "line_total": 520.0
+    }
+  ],
+  "subtotal": 1585.0,
+  "vat": 79.25,
+  "total": 1664.25,
+  "po_amount": 1664.25,
+  "po_in_master": true,
+  "po_vendor_name": "Pacheco Inc LLC",
+  "po_trn": "100395376724238",
+  "pdf_file": "INV-2026-0060.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

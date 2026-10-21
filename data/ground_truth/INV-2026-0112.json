@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0112",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1109",
+  "invoice_date": "2026-04-19",
+  "due_date": "2026-05-19",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 2,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 6,
+      "unit_price": 750.0,
+      "line_total": 4500.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 2,
+      "unit_price": 38.0,
+      "line_total": 76.0
+    }
+  ],
+  "subtotal": 14976.0,
+  "vat": 748.8,
+  "total": 15724.8,
+  "po_amount": 15724.8,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0112.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "invoice_number": "INV-2026-0107",
+  "vendor": "Rhodes PLC LLC",
+  "vendor_address": "Office 199, Miller Tower, Business Bay, Dubai, UAE",
+  "trn": "100402654235116",
+  "po_number": "PO-1105",
+  "invoice_date": "2026-07-19",
+  "due_date": "2026-09-02",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 2,
+      "unit_price": 38.0,
+      "line_total": 76.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 7,
+      "unit_price": 65.0,
+      "line_total": 455.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 5,
+      "unit_price": 140.0,
+      "line_total": 700.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    }
+  ],
+  "subtotal": 6431.0,
+  "vat": 321.55,
+  "total": 6752.55,
+  "po_amount": 6752.55,
+  "po_in_master": true,
+  "po_vendor_name": "Rhodes PLC LLC",
+  "po_trn": "100402654235116",
+  "pdf_file": "INV-2026-0107.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

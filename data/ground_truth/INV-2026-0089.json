@@ -1,0 +1,47 @@
+{
+  "invoice_number": "INV-2026-0089",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": "PO-1088",
+  "invoice_date": "2026-06-10",
+  "due_date": "2026-07-10",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 4,
+      "unit_price": 320.0,
+      "line_total": 1280.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 4,
+      "unit_price": 65.0,
+      "line_total": 260.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 5,
+      "unit_price": 85.0,
+      "line_total": 425.0
+    }
+  ],
+  "subtotal": 1965.0,
+  "vat": 98.25,
+  "total": 2063.25,
+  "po_amount": 2063.25,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0089.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

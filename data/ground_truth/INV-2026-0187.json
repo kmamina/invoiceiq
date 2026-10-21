@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0187",
+  "vendor": "Barnes Group LLC",
+  "vendor_address": "Office 167, Lawrence Tower, Business Bay, Dubai, UAE",
+  "trn": "100764835030564",
+  "po_number": "PO-1176",
+  "invoice_date": "2026-03-05",
+  "due_date": "2026-04-04",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 6,
+      "unit_price": 140.0,
+      "line_total": 840.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 5,
+      "unit_price": 210.0,
+      "line_total": 1050.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 1,
+      "unit_price": 320.0,
+      "line_total": 320.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    }
+  ],
+  "subtotal": 9210.0,
+  "vat": 460.5,
+  "total": 9670.5,
+  "po_amount": 9670.5,
+  "po_in_master": true,
+  "po_vendor_name": "Barnes Group LLC",
+  "po_trn": "100764835030564",
+  "pdf_file": "INV-2026-0187.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}

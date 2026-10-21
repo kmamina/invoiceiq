@@ -1,16 +1,18 @@
 """
 build_db.py
 Creates the SQLite database (data/invoiceiq.db) from scratch:
-  - vendors             : the approved supplier list (vendor master)
-  - purchase_orders     : each PO and its amount
+  - vendors             : the approved supplier list, with each vendor's contract payment terms
+  - purchase_orders     : each PO and its approved amount
   - processed_invoices  : invoices we have already handled (starts empty)
-Running this file again resets the database.
+Running this file again resets these three tables.
+(The audit_log table is never touched.)
 """
 
 import json
 import sqlite3
 from pathlib import Path
 
+from config import VENDOR_TERMS_DAYS
 from generate_invoices import VENDORS
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,10 +25,11 @@ DROP TABLE IF EXISTS purchase_orders;
 DROP TABLE IF EXISTS processed_invoices;
 
 CREATE TABLE vendors (
-    vendor_id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name      TEXT NOT NULL,
-    trn       TEXT NOT NULL UNIQUE,
-    address   TEXT
+    vendor_id          INTEGER PRIMARY KEY AUTOINCREMENT,
+    name               TEXT NOT NULL,
+    trn                TEXT NOT NULL UNIQUE,
+    address            TEXT,
+    payment_terms_days INTEGER
 );
 
 CREATE TABLE purchase_orders (
@@ -56,20 +59,33 @@ def build():
     try:
         conn.executescript(SCHEMA)
 
-        # 1. Vendor master: every vendor from the invoice generator
-        for vendor in VENDORS:
+        # 1. Vendor master: the approved vendors and their contract terms
+        for index, vendor in enumerate(VENDORS):
             conn.execute(
-                "INSERT INTO vendors (name, trn, address) VALUES (?, ?, ?)",
-                (vendor["name"], vendor["trn"], vendor["address"]),
+                "INSERT INTO vendors (name, trn, address, payment_terms_days) VALUES (?, ?, ?, ?)",
+                (vendor["name"], vendor["trn"], vendor["address"], VENDOR_TERMS_DAYS[index]),
             )
 
-        # 2. Purchase orders: one PO per correct invoice (the answer-key files)
+        # 2. Purchase orders: read from the answer-key files.
+        #    po_amount is what the PO says (it can differ from the invoice total).
+        #    po_in_master is False for invoices whose PO number does not exist.
         for json_file in sorted(TRUTH_DIR.glob("*.json")):
             data = json.loads(json_file.read_text(encoding="utf-8"))
+            po_number = data.get("po_number")
+            if not po_number or not data.get("po_in_master", True):
+                continue
+            po_amount = data.get("po_amount", data.get("total"))
+            if po_amount is None:
+                continue
             conn.execute(
                 "INSERT OR IGNORE INTO purchase_orders "
                 "(po_number, vendor_name, trn, po_amount) VALUES (?, ?, ?, ?)",
-                (data["po_number"], data["vendor"], data["trn"], data["total"]),
+                (
+                    po_number,
+                    data.get("po_vendor_name", data.get("vendor")),
+                    data.get("po_trn", data.get("trn")),
+                    po_amount,
+                ),
             )
 
         conn.commit()

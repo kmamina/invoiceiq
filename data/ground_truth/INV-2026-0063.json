@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0063",
+  "vendor": "Hall PLC LLC",
+  "vendor_address": "Office 384, Johnson Tower, Business Bay, Dubai, UAE",
+  "trn": "100959310341316",
+  "po_number": null,
+  "invoice_date": "2026-09-15",
+  "due_date": "2026-10-15",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 2,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 2,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 2,
+      "unit_price": 320.0,
+      "line_total": 640.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 7,
+      "unit_price": 210.0,
+      "line_total": 1470.0
+    }
+  ],
+  "subtotal": 16240.0,
+  "vat": 812.0,
+  "total": 17052.0,
+  "po_amount": 17052.0,
+  "po_in_master": true,
+  "po_vendor_name": "Hall PLC LLC",
+  "po_trn": "100959310341316",
+  "pdf_file": "INV-2026-0063.pdf",
+  "labels": {
+    "error_type": "missing_field",
+    "expected_route": "HUMAN_REVIEW",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": "po_number"
+  }
+}

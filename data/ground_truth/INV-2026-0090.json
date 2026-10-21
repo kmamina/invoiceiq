@@ -1,0 +1,59 @@
+{
+  "invoice_number": "INV-2026-0090",
+  "vendor": "Gonzalez Ltd LLC",
+  "vendor_address": "Office 267, Miles Tower, Business Bay, Dubai, UAE",
+  "trn": "100752553419283",
+  "po_number": "PO-1089",
+  "invoice_date": "2026-05-17",
+  "due_date": "2026-07-01",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 3,
+      "unit_price": 450.0,
+      "line_total": 1350.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 2,
+      "unit_price": 140.0,
+      "line_total": 280.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 5,
+      "unit_price": 320.0,
+      "line_total": 1600.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 5,
+      "unit_price": 65.0,
+      "line_total": 325.0
+    }
+  ],
+  "subtotal": 10305.0,
+  "vat": 515.25,
+  "total": 10820.25,
+  "po_amount": 10820.25,
+  "po_in_master": true,
+  "po_vendor_name": "Gonzalez Ltd LLC",
+  "po_trn": "100752553419283",
+  "pdf_file": "INV-2026-0090.pdf",
+  "labels": {
+    "error_type": "clean",
+    "expected_route": "ELIGIBLE_FOR_APPROVAL",
+    "injected": false,
+    "hidden_text": null,
+    "source_invoice": null,
+    "missing_field": null
+  }
+}
