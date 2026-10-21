@@ -79,6 +79,10 @@ def get_vendor_history(trn):
 
 def record_processed(invoice: Invoice, decision):
     """Save a handled invoice in the history table."""
+    if not invoice.invoice_number:
+        # Without an invoice number it can never be matched as a duplicate later,
+        # so we do not store it (the history table requires a number).
+        return
     execute(
         "INSERT INTO processed_invoices "
         "(invoice_number, vendor_name, trn, invoice_date, total, decision) "

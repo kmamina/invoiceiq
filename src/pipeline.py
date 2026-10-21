@@ -1,10 +1,10 @@
 """
 pipeline.py
 The full flow for one invoice:
-  PDF -> extract -> 11 checks -> route -> (agent investigates) -> save to history -> audit log
+  PDF -> extract -> 13 checks -> route -> (agent investigates) -> save to history -> audit log
 
 Rule: the LLM never decides. It only extracts (extract.py) and explains (agent.py).
-The routing below is plain Python.
+The routing rules are in routing.py (plain Python).
 """
 
 import json
@@ -15,23 +15,8 @@ from audit import log_event
 from checks import run_all_checks
 from db import record_processed
 from extract import EXTRACT_DIR, extract_invoice
+from routing import ELIGIBLE, FLAG, HUMAN, decide
 from schemas import Invoice
-
-ELIGIBLE = "ELIGIBLE_FOR_APPROVAL"
-FLAG = "FLAGGED"
-HUMAN = "HUMAN_REVIEW"
-
-
-def decide(results):
-    """Choose the route from the check results. Returns (route, reasons)."""
-    failed = [r for r in results if not r.passed]
-    reasons = [f"{r.name}: {r.message}" for r in failed]
-
-    if any(r.name == "required_fields" for r in failed):
-        return HUMAN, reasons          # data is incomplete: a person must look
-    if failed:
-        return FLAG, reasons           # something looks wrong
-    return ELIGIBLE, [f"All {len(results)} checks passed"]
 
 
 def get_invoice(pdf_path):

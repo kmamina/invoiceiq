@@ -6,15 +6,16 @@ always gets the same result.
 
 Part 1: checks that look only at the invoice itself
 Part 2: checks that compare the invoice with company records (the database)
+Part 3: checks against company policy (approval limit, contract terms)
 """
+
+import re
 
 from pydantic import BaseModel
 
+from config import APPROVAL_LIMIT, TOLERANCE, VAT_RATE
 from db import find_duplicate, find_po, find_vendor_by_trn
 from schemas import Invoice
-
-VAT_RATE = 0.05      # UAE VAT is 5 percent
-TOLERANCE = 0.01     # allow a difference of 1 fils (0.01 AED) for rounding
 
 # Fields that every invoice must have
 REQUIRED_FIELDS = [
@@ -173,6 +174,43 @@ def check_not_duplicate(invoice: Invoice):
     return _pass("not_duplicate", "This invoice number has not been seen before for this vendor")
 
 
+# =====================================================
+# PART 3: checks against company policy
+# =====================================================
+
+def check_approval_limit(invoice: Invoice):
+    if invoice.total is None:
+        return _fail("approval_limit", "Cannot check: total is missing")
+    if invoice.total > APPROVAL_LIMIT:
+        return _fail(
+            "approval_limit",
+            f"Total {invoice.total:,.2f} is above the approval limit of {APPROVAL_LIMIT:,.2f}, "
+            f"so it needs senior approval",
+        )
+    return _pass("approval_limit", f"Total {invoice.total:,.2f} is within the approval limit of {APPROVAL_LIMIT:,.2f}")
+
+
+def check_payment_terms(invoice: Invoice):
+    if invoice.payment_terms is None:
+        return _fail("payment_terms", "Cannot check: payment terms are missing")
+    if invoice.trn is None:
+        return _fail("payment_terms", "Cannot check: TRN is missing")
+    vendor = find_vendor_by_trn(invoice.trn)
+    if vendor is None:
+        return _fail("payment_terms", "Cannot check: the vendor is not in the vendor master")
+    match = re.search(r"(\d+)", invoice.payment_terms)
+    if match is None:
+        return _fail("payment_terms", f"Cannot read the number of days in '{invoice.payment_terms}'")
+    days = int(match.group(1))
+    contract_days = vendor["payment_terms_days"]
+    if days != contract_days:
+        return _fail(
+            "payment_terms",
+            f"Invoice says Net {days} days, but the contract with {vendor['name']} says Net {contract_days} days",
+        )
+    return _pass("payment_terms", f"Payment terms match the contract (Net {contract_days} days)")
+
+
 ALL_CHECKS = [
     check_required_fields,
     check_trn_format,
@@ -185,6 +223,8 @@ ALL_CHECKS = [
     check_po_exists,
     check_po_amount,
     check_not_duplicate,
+    check_approval_limit,
+    check_payment_terms,
 ]
 
 
