@@ -1,15 +1,16 @@
 """
 pipeline.py
 The full flow for one invoice:
-  PDF -> extract -> 11 checks -> route -> save to history -> audit log
+  PDF -> extract -> 11 checks -> route -> (agent investigates) -> save to history -> audit log
 
-Rule: the LLM never decides. It only extracts (inside extract.py).
+Rule: the LLM never decides. It only extracts (extract.py) and explains (agent.py).
 The routing below is plain Python.
 """
 
 import json
 from pathlib import Path
 
+from agent import investigate
 from audit import log_event
 from checks import run_all_checks
 from db import record_processed
@@ -45,7 +46,7 @@ def get_invoice(pdf_path):
     return invoice, "Gemini"
 
 
-def route_invoice(invoice, name, run_id, source):
+def route_invoice(invoice, name, run_id, source, use_agent=False):
     """Run the checks on an already-extracted invoice, decide, and log everything."""
     log_event(
         run_id, name, "extracted",
@@ -59,13 +60,19 @@ def route_invoice(invoice, name, run_id, source):
     route, reasons = decide(results)
     log_event(run_id, name, "decision", {"route": route, "reasons": reasons})
 
+    # The agent explains flagged or unclear invoices. It runs BEFORE we save the invoice
+    # to the history, so its tools see the same records the checks saw.
+    explanation = None
+    if use_agent and route != ELIGIBLE:
+        explanation = investigate(invoice, name, run_id, route, results)
+
     # Remember this invoice, so a second copy will be caught as a duplicate
     record_processed(invoice, route)
 
-    return {"name": name, "route": route, "reasons": reasons}
+    return {"name": name, "route": route, "reasons": reasons, "explanation": explanation}
 
 
-def process_pdf(pdf_path, run_id):
+def process_pdf(pdf_path, run_id, use_agent=False):
     """The whole flow, starting from a PDF file."""
     name = Path(pdf_path).stem
     try:
@@ -75,6 +82,6 @@ def process_pdf(pdf_path, run_id):
         reasons = [f"Extraction failed: {error}"]
         log_event(run_id, name, "extraction_failed", {"error": str(error)})
         log_event(run_id, name, "decision", {"route": HUMAN, "reasons": reasons})
-        return {"name": name, "route": HUMAN, "reasons": reasons}
+        return {"name": name, "route": HUMAN, "reasons": reasons, "explanation": None}
 
-    return route_invoice(invoice, name, run_id, source)
+    return route_invoice(invoice, name, run_id, source, use_agent=use_agent)
