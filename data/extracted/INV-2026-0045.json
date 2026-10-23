@@ -1,0 +1,33 @@
+{
+  "invoice_number": "INV-2026-0045",
+  "vendor": "Rhodes PLC LLC",
+  "trn": "100402654235116",
+  "po_number": "PO-1045",
+  "invoice_date": "2026-08-11",
+  "due_date": "2026-09-25",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 2.0,
+      "unit_price": 210.0,
+      "line_total": 420.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 2.0,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 4.0,
+      "unit_price": 320.0,
+      "line_total": 1280.0
+    }
+  ],
+  "subtotal": 1870.0,
+  "vat": 93.5,
+  "total": 1963.5
+}

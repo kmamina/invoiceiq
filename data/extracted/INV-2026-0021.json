@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0021",
+  "vendor": "Gonzalez Ltd LLC",
+  "trn": "100752553419283",
+  "po_number": "PO-1021",
+  "invoice_date": "2026-02-10",
+  "due_date": "2026-02-25",
+  "payment_terms": "Net 15 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 9.0,
+      "unit_price": 450.0,
+      "line_total": 4050.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 3.0,
+      "unit_price": 65.0,
+      "line_total": 195.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 1.0,
+      "unit_price": 85.0,
+      "line_total": 85.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3.0,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 4.0,
+      "unit_price": 140.0,
+      "line_total": 560.0
+    }
+  ],
+  "subtotal": 10290.0,
+  "vat": 514.5,
+  "total": 10804.5
+}

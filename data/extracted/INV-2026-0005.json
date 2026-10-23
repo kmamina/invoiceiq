@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0005",
+  "vendor": "Sanchez and Sons LLC",
+  "trn": "100133890838637",
+  "po_number": "PO-1005",
+  "invoice_date": "2026-03-25",
+  "due_date": "2026-04-24",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 3.0,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9.0,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    }
+  ],
+  "subtotal": 1725.0,
+  "vat": 86.25,
+  "total": 1811.25
+}

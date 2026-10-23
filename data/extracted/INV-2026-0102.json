@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0102",
+  "vendor": "Henderson Inc LLC",
+  "trn": "100559407816184",
+  "po_number": "PO-1100",
+  "invoice_date": "2026-08-06",
+  "due_date": "2026-10-05",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 3.0,
+      "unit_price": 210.0,
+      "line_total": 630.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 1.0,
+      "unit_price": 85.0,
+      "line_total": 85.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 5.0,
+      "unit_price": 38.0,
+      "line_total": 190.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 9.0,
+      "unit_price": 140.0,
+      "line_total": 1260.0
+    }
+  ],
+  "subtotal": 2165.0,
+  "vat": 108.25,
+  "total": 2273.25
+}

@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0049",
+  "vendor": "Rhodes PLC LLC",
+  "trn": "100402654235116",
+  "po_number": "PO-1049",
+  "invoice_date": "2026-04-15",
+  "due_date": "2026-05-30",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3.0,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 5.0,
+      "unit_price": 38.0,
+      "line_total": 190.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 5.0,
+      "unit_price": 85.0,
+      "line_total": 425.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 6.0,
+      "unit_price": 450.0,
+      "line_total": 2700.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 7.0,
+      "unit_price": 320.0,
+      "line_total": 2240.0
+    }
+  ],
+  "subtotal": 10955.0,
+  "vat": 547.75,
+  "total": 11502.75
+}

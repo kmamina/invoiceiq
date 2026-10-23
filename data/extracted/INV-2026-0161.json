@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0161",
+  "vendor": "Henderson Inc LLC",
+  "trn": "100559407816184",
+  "po_number": "PO-1151",
+  "invoice_date": "2026-06-19",
+  "due_date": "2026-08-18",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 2.0,
+      "unit_price": 450.0,
+      "line_total": 900.0
+    }
+  ],
+  "subtotal": 2700.0,
+  "vat": 270.0,
+  "total": 2970.0
+}

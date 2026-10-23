@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0034",
+  "vendor": "Henderson Inc LLC",
+  "trn": "100559407816184",
+  "po_number": "PO-1034",
+  "invoice_date": "2026-06-10",
+  "due_date": "2026-08-09",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 9.0,
+      "unit_price": 38.0,
+      "line_total": 342.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 3.0,
+      "unit_price": 85.0,
+      "line_total": 255.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 9.0,
+      "unit_price": 210.0,
+      "line_total": 1890.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 2.0,
+      "unit_price": 450.0,
+      "line_total": 900.0
+    }
+  ],
+  "subtotal": 3387.0,
+  "vat": 169.35,
+  "total": 3556.35
+}

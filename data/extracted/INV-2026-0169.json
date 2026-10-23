@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0169",
+  "vendor": "Fowler Inc LLC",
+  "trn": "100104332181960",
+  "po_number": "PO-1159",
+  "invoice_date": "2026-08-16",
+  "due_date": "2026-09-15",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 6.0,
+      "unit_price": 320.0,
+      "line_total": 1920.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 2.0,
+      "unit_price": 1800.0,
+      "line_total": 3600.0
+    }
+  ],
+  "subtotal": 5520.0,
+  "vat": 276.0,
+  "total": 5796.0
+}

@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0035",
+  "vendor": "Rhodes PLC LLC",
+  "trn": "100402654235116",
+  "po_number": "PO-1035",
+  "invoice_date": "2026-06-29",
+  "due_date": "2026-08-13",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 6.0,
+      "unit_price": 750.0,
+      "line_total": 4500.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 3.0,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    }
+  ],
+  "subtotal": 5460.0,
+  "vat": 273.0,
+  "total": 5733.0
+}

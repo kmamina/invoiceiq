@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0025",
+  "vendor": "Gonzalez Ltd LLC",
+  "trn": "100752553419283",
+  "po_number": "PO-1025",
+  "invoice_date": "2026-03-31",
+  "due_date": "2026-05-15",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 3.0,
+      "unit_price": 140.0,
+      "line_total": 420.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10.0,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3.0,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 8.0,
+      "unit_price": 210.0,
+      "line_total": 1680.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 1.0,
+      "unit_price": 5200.0,
+      "line_total": 5200.0
+    }
+  ],
+  "subtotal": 15900.0,
+  "vat": 795.0,
+  "total": 16695.0
+}

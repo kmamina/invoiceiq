@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0197",
+  "vendor": "Gonzalez Ltd LLC",
+  "trn": "100752553419283",
+  "po_number": "PO-1184",
+  "invoice_date": "2026-05-05",
+  "due_date": "2026-06-19",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 3.0,
+      "unit_price": 210.0,
+      "line_total": 630.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 8.0,
+      "unit_price": 85.0,
+      "line_total": 680.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10.0,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2.0,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 8.0,
+      "unit_price": 38.0,
+      "line_total": 304.0
+    }
+  ],
+  "subtotal": 15214.0,
+  "vat": 760.7,
+  "total": 15974.7
+}

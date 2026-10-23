@@ -58,12 +58,23 @@ INVOICE TEXT:
 """
 
 
+# Remembers which model gave the last answer, and which models are resting after a 429.
+LAST_MODEL = None
+COOLDOWN_UNTIL = {}          # model name -> time when we may try it again
+COOLDOWN_SECONDS = 600       # a model that said 429 (quota/rate limit) rests for 10 minutes
+
+
 def call_gemini(prompt):
     """Call Gemini and return the answer text.
-    If the server is busy, slow, or not answering, wait and try again.
-    If a model keeps failing, move on to the backup model."""
+    503/500 or a timeout: the server is busy, so wait and retry the same model.
+    429: this model has hit its rate or daily limit. Waiting 60 seconds will not
+    fix that, so rest the model for 10 minutes and use the backup model right away.
+    Any other error: move on to the backup model."""
+    global LAST_MODEL
     last_error = None
     for model in MODELS:
+        if COOLDOWN_UNTIL.get(model, 0) > time.time():
+            continue  # this model is resting after a 429
         for attempt in range(1, 4):
             print(f"  asking {model} (try {attempt} of 3)...")
             try:
@@ -75,10 +86,15 @@ def call_gemini(prompt):
                         response_schema=Invoice,
                     ),
                 )
+                LAST_MODEL = model
                 return response.text
             except errors.APIError as error:
                 last_error = error
-                if error.code in (429, 500, 503):
+                if error.code == 429:
+                    print(f"  {model} hit its limit (error 429). Resting it for 10 minutes, trying the next model...")
+                    COOLDOWN_UNTIL[model] = time.time() + COOLDOWN_SECONDS
+                    break
+                elif error.code in (500, 503):
                     wait = 10 * attempt
                     print(f"  {model} is busy (error {error.code}). Waiting {wait} seconds...")
                     time.sleep(wait)

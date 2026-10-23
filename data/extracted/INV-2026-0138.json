@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0138",
+  "vendor": "Sanchez and Sons LLC",
+  "trn": "100133890838637",
+  "po_number": "PO-1131",
+  "invoice_date": "2026-01-28",
+  "due_date": "2026-02-27",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 2.0,
+      "unit_price": 750.0,
+      "line_total": 1500.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 2.0,
+      "unit_price": 320.0,
+      "line_total": 640.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 2.0,
+      "unit_price": 38.0,
+      "line_total": 76.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 2.0,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    }
+  ],
+  "subtotal": 2346.0,
+  "vat": 117.3,
+  "total": 2463.3
+}

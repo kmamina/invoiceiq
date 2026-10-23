@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0039",
+  "vendor": "Gonzalez Ltd LLC",
+  "trn": "100752553419283",
+  "po_number": "PO-1039",
+  "invoice_date": "2026-09-10",
+  "due_date": "2026-10-25",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 4.0,
+      "unit_price": 38.0,
+      "line_total": 152.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9.0,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 5.0,
+      "unit_price": 210.0,
+      "line_total": 1050.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 9.0,
+      "unit_price": 140.0,
+      "line_total": 1260.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9.0,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    }
+  ],
+  "subtotal": 9977.0,
+  "vat": 498.85,
+  "total": 10725.85
+}

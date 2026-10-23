@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0106",
+  "vendor": "Fowler Inc LLC",
+  "trn": "100104332181960",
+  "po_number": "PO-1104",
+  "invoice_date": "2026-01-10",
+  "due_date": "2026-02-09",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Annual Software Support",
+      "quantity": 1.0,
+      "unit_price": 5200.0,
+      "line_total": 5600.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 10.0,
+      "unit_price": 85.0,
+      "line_total": 850.0
+    }
+  ],
+  "subtotal": 6050.0,
+  "vat": 302.5,
+  "total": 6352.5
+}

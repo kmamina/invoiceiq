@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0051",
+  "vendor": "Pacheco Inc LLC",
+  "trn": "100395376724238",
+  "po_number": "PO-1051",
+  "invoice_date": "2026-04-08",
+  "due_date": "2026-06-07",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 3.0,
+      "unit_price": 38.0,
+      "line_total": 114.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 5.0,
+      "unit_price": 450.0,
+      "line_total": 2250.0
+    }
+  ],
+  "subtotal": 2364.0,
+  "vat": 118.2,
+  "total": 2482.2
+}

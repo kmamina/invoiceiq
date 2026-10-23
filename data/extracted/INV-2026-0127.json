@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0103",
+  "vendor": "Fowler Inc LLC",
+  "trn": "100104332181960",
+  "po_number": "PO-1101",
+  "invoice_date": "2026-08-30",
+  "due_date": "2026-09-29",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9.0,
+      "unit_price": 320.0,
+      "line_total": 2880.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 10.0,
+      "unit_price": 65.0,
+      "line_total": 650.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9.0,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 4.0,
+      "unit_price": 450.0,
+      "line_total": 1800.0
+    }
+  ],
+  "subtotal": 12080.0,
+  "vat": 604.0,
+  "total": 12684.0
+}

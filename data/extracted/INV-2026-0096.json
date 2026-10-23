@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0096",
+  "vendor": "Rhodes PLC LLC",
+  "trn": "100402654235116",
+  "po_number": "PO-1094",
+  "invoice_date": "2026-07-23",
+  "due_date": "2026-09-06",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 10.0,
+      "unit_price": 320.0,
+      "line_total": 3200.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2.0,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    }
+  ],
+  "subtotal": 13600.0,
+  "vat": 680.0,
+  "total": 14280.0
+}

@@ -1,0 +1,27 @@
+{
+  "invoice_number": "INV-2026-0147",
+  "vendor": "Burke Trading FZE",
+  "trn": "100427820624431",
+  "po_number": "PO-1139",
+  "invoice_date": "2026-01-09",
+  "due_date": "2026-03-10",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 10.0,
+      "unit_price": 38.0,
+      "line_total": 380.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 9.0,
+      "unit_price": 750.0,
+      "line_total": 6750.0
+    }
+  ],
+  "subtotal": 7130.0,
+  "vat": 356.5,
+  "total": 7486.5
+}

@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0109",
+  "vendor": "Hall PLC LLC",
+  "trn": "100959310341316",
+  "po_number": "PO-1106",
+  "invoice_date": "2026-08-24",
+  "due_date": "2026-09-23",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 10.0,
+      "unit_price": 38.0,
+      "line_total": 380.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 8.0,
+      "unit_price": 450.0,
+      "line_total": 3600.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 6.0,
+      "unit_price": 210.0,
+      "line_total": 1260.0
+    }
+  ],
+  "subtotal": 7040.0,
+  "vat": 352.0,
+  "total": 7392.0
+}

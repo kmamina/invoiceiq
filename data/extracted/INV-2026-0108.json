@@ -1,0 +1,39 @@
+{
+  "invoice_number": "INV-2026-0080",
+  "vendor": "Gonzalez Ltd LLC",
+  "trn": "100752553419283",
+  "po_number": "PO-1080",
+  "invoice_date": "2026-02-15",
+  "due_date": "2026-04-01",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 10.0,
+      "unit_price": 450.0,
+      "line_total": 4500.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2.0,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 1.0,
+      "unit_price": 750.0,
+      "line_total": 750.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 6.0,
+      "unit_price": 210.0,
+      "line_total": 1260.0
+    }
+  ],
+  "subtotal": 16910.0,
+  "vat": 845.5,
+  "total": 17755.5
+}

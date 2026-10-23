@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV-2026-0150",
+  "vendor": "Pacheco Inc LLC",
+  "trn": "100395376724238",
+  "po_number": "PO-1142",
+  "invoice_date": "2026-07-12",
+  "due_date": "2026-09-10",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "A4 Copy Paper (box of 5 reams)",
+      "quantity": 9.0,
+      "unit_price": 85.0,
+      "line_total": 765.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 6.0,
+      "unit_price": 450.0,
+      "line_total": 2700.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages)",
+      "quantity": 9.0,
+      "unit_price": 140.0,
+      "line_total": 1260.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 5.0,
+      "unit_price": 38.0,
+      "line_total": 190.0
+    },
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 7.0,
+      "unit_price": 65.0,
+      "line_total": 455.0
+    }
+  ],
+  "subtotal": 5370.0,
+  "vat": 268.5,
+  "total": 5638.5
+}
