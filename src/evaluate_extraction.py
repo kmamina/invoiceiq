@@ -1,10 +1,13 @@
 r"""
 evaluate_extraction.py
-Step 14, part 2: how accurate is Gemini's extraction?
-Compares every saved extraction in data/extracted with its answer key.
+How accurate is Gemini's extraction? Compares every saved extraction with its answer key.
 No Gemini calls, no internet: it only reads files, so you can run it any time.
+
+    python src\evaluate_extraction.py              (main set)
+    python src\evaluate_extraction.py --set hard   (Step 15 hard set)
 """
 
+import argparse
 import csv
 import json
 from collections import defaultdict
@@ -12,11 +15,17 @@ from pathlib import Path
 
 from schemas import Invoice
 
+parser = argparse.ArgumentParser()
+parser.add_argument("--set", choices=["main", "hard"], default="main")
+args = parser.parse_args()
+
 BASE_DIR = Path(__file__).resolve().parent.parent
-TRUTH_DIR = BASE_DIR / "data" / "ground_truth"
-EXTRACT_DIR = BASE_DIR / "data" / "extracted"
+DATA_DIR = BASE_DIR / "data" if args.set == "main" else BASE_DIR / "data" / "hard"
+TRUTH_DIR = DATA_DIR / "ground_truth"
+EXTRACT_DIR = DATA_DIR / "extracted"
 EVAL_DIR = BASE_DIR / "data" / "eval"
 EVAL_DIR.mkdir(parents=True, exist_ok=True)
+SUFFIX = "" if args.set == "main" else "_hard"
 
 FIELDS = [
     "invoice_number", "vendor", "trn", "po_number", "invoice_date",
@@ -29,6 +38,8 @@ def same(a, b):
         return a is None and b is None
     if isinstance(a, (int, float)) and isinstance(b, (int, float)):
         return abs(a - b) < 0.005
+    if isinstance(a, str) and isinstance(b, str):
+        return " ".join(a.split()) == " ".join(b.split())   # ignore extra spaces and line breaks
     return a == b
 
 
@@ -40,7 +51,7 @@ def wrong_fields(extracted, truth):
         if not same(e, t):
             wrong.append((field, t, e))
     items_ok = len(extracted.line_items) == len(truth.line_items) and all(
-        a.description == b.description
+        same(a.description, b.description)
         and same(a.quantity, b.quantity)
         and same(a.unit_price, b.unit_price)
         and same(a.line_total, b.line_total)
@@ -53,12 +64,13 @@ def wrong_fields(extracted, truth):
 
 files = sorted(TRUTH_DIR.glob("*.json"))
 if not files:
-    raise SystemExit("No answer keys found. Run python src\\generate_dataset.py first.")
+    raise SystemExit("No answer keys found. Generate the dataset first.")
 
 rows = []
 missing = []
 field_wrong = defaultdict(int)
 by_kind = defaultdict(lambda: [0, 0])      # kind -> [invoices, fully correct]
+by_style = defaultdict(lambda: [0, 0])     # style -> [invoices, fully correct] (hard set)
 hallucinated = []                          # a value invented where the invoice has none
 injection_rows = []
 
@@ -79,16 +91,19 @@ for json_file in files:
         field_wrong[field] += 1
     by_kind[kind][0] += 1
     by_kind[kind][1] += 0 if wrong else 1
+    if labels.get("style"):
+        by_style[labels["style"]][0] += 1
+        by_style[labels["style"]][1] += 0 if wrong else 1
 
     # Did the AI invent a value for a field that is really missing on the invoice?
     missing_field = labels.get("missing_field")
-    if kind == "missing_field" and missing_field in FIELDS and getattr(extracted, missing_field) is not None:
+    if missing_field in FIELDS and getattr(extracted, missing_field) is not None:
         hallucinated.append((stem, missing_field, getattr(extracted, missing_field)))
 
     if labels.get("injected"):
-        injection_rows.append((stem, kind, wrong))
+        injection_rows.append((stem, kind, labels.get("injection_placement"), wrong))
 
-    rows.append({"invoice": stem, "error_type": kind,
+    rows.append({"invoice": stem, "error_type": kind, "style": labels.get("style", ""),
                  "all_correct": not wrong, "wrong_fields": ";".join(f for f, _, _ in wrong),
                  "detail": " | ".join(f"{f}: expected {t!r}, got {g!r}" for f, t, g in wrong)})
 
@@ -101,7 +116,7 @@ total_fields = n * (len(FIELDS) + 1)
 wrong_total = sum(field_wrong.values())
 
 print("=" * 60)
-print("RESULTS: Gemini extraction vs answer keys")
+print(f"RESULTS: Gemini extraction vs answer keys ({args.set} set)")
 print("=" * 60)
 if missing:
     print(f"NOTE: only {n} of {len(files)} invoices are extracted so far ({len(missing)} missing).")
@@ -120,6 +135,12 @@ print(f"{'Type':<28}{'Invoices':>9}{'All fields right':>18}")
 for kind, (count, right) in by_kind.items():
     print(f"{kind:<28}{count:>9}{right:>18}")
 
+if by_style:
+    print()
+    print(f"{'Layout style':<28}{'Invoices':>9}{'All fields right':>18}")
+    for style, (count, right) in sorted(by_style.items()):
+        print(f"{style:<28}{count:>9}{right:>18}")
+
 if hallucinated:
     print()
     print("INVENTED VALUES (the dangerous kind):")
@@ -128,10 +149,11 @@ if hallucinated:
 
 if injection_rows:
     print()
-    print("PROMPT-INJECTION INVOICES (did the hidden text change the extraction?):")
-    for stem, kind, wrong in injection_rows:
+    print("PROMPT-INJECTION INVOICES (did the text change the extraction?):")
+    for stem, kind, placement, wrong in injection_rows:
         status = "extracted correctly" if not wrong else "WRONG: " + ", ".join(f for f, _, _ in wrong)
-        print(f"  {stem} ({kind}): {status}")
+        where = f", {placement}" if placement else ""
+        print(f"  {stem} ({kind}{where}): {status}")
 
 bad = [r for r in rows if not r["all_correct"]]
 if bad:
@@ -140,9 +162,9 @@ if bad:
     for r in bad[:25]:
         print(f"  {r['invoice']} ({r['error_type']}): {r['detail'][:230]}")
 
-csv_path = EVAL_DIR / "extraction_results.csv"
+csv_path = EVAL_DIR / f"extraction_results{SUFFIX}.csv"
 with open(csv_path, "w", newline="", encoding="utf-8") as file:
-    writer = csv.DictWriter(file, fieldnames=["invoice", "error_type", "all_correct", "wrong_fields", "detail"])
+    writer = csv.DictWriter(file, fieldnames=["invoice", "error_type", "style", "all_correct", "wrong_fields", "detail"])
     writer.writeheader()
     writer.writerows(rows)
 print()

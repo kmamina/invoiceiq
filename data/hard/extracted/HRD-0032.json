@@ -1,0 +1,27 @@
+{
+  "invoice_number": "SI/2026/01424",
+  "vendor": "Pacheco Inc LLC",
+  "trn": "100395376724238",
+  "po_number": "PO-5031",
+  "invoice_date": "2026-08-13",
+  "due_date": "2026-10-12",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment)",
+      "quantity": 5.0,
+      "unit_price": 65.0,
+      "line_total": 325.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    }
+  ],
+  "subtotal": 2125.0,
+  "vat": 212.5,
+  "total": 2337.5
+}

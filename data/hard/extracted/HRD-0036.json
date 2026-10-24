@@ -1,0 +1,39 @@
+{
+  "invoice_number": "SI/2026/01452",
+  "vendor": "Pacheco Inc LLC",
+  "trn": "100395376724238",
+  "po_number": "PO-5035",
+  "invoice_date": "2026-07-27",
+  "due_date": "2026-09-25",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 6.0,
+      "unit_price": 750.0,
+      "line_total": 4500.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 2.0,
+      "unit_price": 38.0,
+      "line_total": 76.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m)",
+      "quantity": 2.5,
+      "unit_price": 210.0,
+      "line_total": 525.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    }
+  ],
+  "subtotal": 6901.0,
+  "vat": 345.05,
+  "total": 7246.05
+}

@@ -1,0 +1,33 @@
+{
+  "invoice_number": "01473/2026",
+  "vendor": "Fowler Inc LLC",
+  "trn": "100104332181960",
+  "po_number": "PO-5037",
+  "invoice_date": "2026-05-24",
+  "due_date": "2026-06-23",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 3.0,
+      "unit_price": 1800.0,
+      "line_total": 5400.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 6.0,
+      "unit_price": 450.0,
+      "line_total": 2700.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 4.0,
+      "unit_price": 38.0,
+      "line_total": 152.0
+    }
+  ],
+  "subtotal": 8252.0,
+  "vat": 412.6,
+  "total": 8664.6
+}

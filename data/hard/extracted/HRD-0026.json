@@ -1,0 +1,27 @@
+{
+  "invoice_number": "TI-26-1382",
+  "vendor": "Rhodes PLC LLC",
+  "trn": "100402654235116",
+  "po_number": "PO-5026",
+  "invoice_date": "2026-07-24",
+  "due_date": "2026-09-07",
+  "payment_terms": "Net 45 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Whiteboard Markers (pack of 12) - supplied and delivered to the Jebel Ali warehouse, including unpacking and setup",
+      "quantity": 2.5,
+      "unit_price": 38.0,
+      "line_total": 95.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - includes installation by certified staff and a twelve month warranty on parts",
+      "quantity": 5.0,
+      "unit_price": 85.0,
+      "line_total": 425.0
+    }
+  ],
+  "subtotal": 520.0,
+  "vat": 26.0,
+  "total": 546.0
+}

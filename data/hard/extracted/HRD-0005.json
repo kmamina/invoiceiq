@@ -1,0 +1,45 @@
+{
+  "invoice_number": "INV001235",
+  "vendor": "Barnes Group LLC",
+  "trn": "100764835030564",
+  "po_number": "PO-5005",
+  "invoice_date": "2026-07-21",
+  "due_date": "2026-08-20",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Office Chair (ergonomic)",
+      "quantity": 4.0,
+      "unit_price": 750.0,
+      "line_total": 3000.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 1.0,
+      "unit_price": 320.0,
+      "line_total": 320.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 2.0,
+      "unit_price": 5200.0,
+      "line_total": 10400.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 10.0,
+      "unit_price": 38.0,
+      "line_total": 380.0
+    }
+  ],
+  "subtotal": 15900.0,
+  "vat": 795.0,
+  "total": 16795.0
+}

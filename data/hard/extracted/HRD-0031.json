@@ -1,0 +1,177 @@
+{
+  "invoice_number": "01417/2026",
+  "vendor": "Fowler Inc LLC",
+  "trn": "100104332181960",
+  "po_number": "PO-5030",
+  "invoice_date": "2026-05-06",
+  "due_date": "2026-06-05",
+  "payment_terms": "Net 30 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Courier Service (per shipment) - lot 1",
+      "quantity": 2.0,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Laptop Docking Station - lot 2",
+      "quantity": 1.0,
+      "unit_price": 450.0,
+      "line_total": 450.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages) - lot 3",
+      "quantity": 2.0,
+      "unit_price": 140.0,
+      "line_total": 280.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge - lot 4",
+      "quantity": 3.0,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages) - lot 5",
+      "quantity": 1.0,
+      "unit_price": 140.0,
+      "line_total": 140.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge - lot 6",
+      "quantity": 3.0,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    },
+    {
+      "description": "Courier Service (per shipment) - lot 7",
+      "quantity": 2.0,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m) - lot 8",
+      "quantity": 2.0,
+      "unit_price": 210.0,
+      "line_total": 420.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - lot 9",
+      "quantity": 2.0,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "description": "Courier Service (per shipment) - lot 10",
+      "quantity": 2.0,
+      "unit_price": 65.0,
+      "line_total": 130.0
+    },
+    {
+      "description": "Printing Services (per 1000 pages) - lot 11",
+      "quantity": 1.0,
+      "unit_price": 140.0,
+      "line_total": 140.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12) - lot 12",
+      "quantity": 3.0,
+      "unit_price": 38.0,
+      "line_total": 114.0
+    },
+    {
+      "description": "Courier Service (per shipment) - lot 13",
+      "quantity": 1.0,
+      "unit_price": 65.0,
+      "line_total": 65.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - lot 14",
+      "quantity": 3.0,
+      "unit_price": 85.0,
+      "line_total": 255.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge - lot 15",
+      "quantity": 2.0,
+      "unit_price": 320.0,
+      "line_total": 640.0
+    },
+    {
+      "description": "Laptop Docking Station - lot 16",
+      "quantity": 3.0,
+      "unit_price": 450.0,
+      "line_total": 1350.0
+    },
+    {
+      "description": "Courier Service (per shipment) - lot 17",
+      "quantity": 3.0,
+      "unit_price": 65.0,
+      "line_total": 195.0
+    },
+    {
+      "description": "Laptop Docking Station - lot 18",
+      "quantity": 3.0,
+      "unit_price": 450.0,
+      "line_total": 1350.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12) - lot 19",
+      "quantity": 1.0,
+      "unit_price": 38.0,
+      "line_total": 38.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - lot 20",
+      "quantity": 2.0,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - lot 21",
+      "quantity": 2.0,
+      "unit_price": 85.0,
+      "line_total": 170.0
+    },
+    {
+      "description": "Laptop Docking Station - lot 22",
+      "quantity": 3.0,
+      "unit_price": 450.0,
+      "line_total": 1350.0
+    },
+    {
+      "description": "A4 Copy Paper (box of 5 reams) - lot 23",
+      "quantity": 3.0,
+      "unit_price": 85.0,
+      "line_total": 255.0
+    },
+    {
+      "description": "Laser Printer Toner Cartridge - lot 24",
+      "quantity": 3.0,
+      "unit_price": 320.0,
+      "line_total": 960.0
+    },
+    {
+      "description": "Network Cable Cat6 (100 m) - lot 25",
+      "quantity": 2.0,
+      "unit_price": 210.0,
+      "line_total": 420.0
+    },
+    {
+      "description": "Courier Service (per shipment) - lot 26",
+      "quantity": 3.0,
+      "unit_price": 65.0,
+      "line_total": 195.0
+    },
+    {
+      "description": "Laptop Docking Station - lot 27",
+      "quantity": 2.0,
+      "unit_price": 450.0,
+      "line_total": 900.0
+    }
+  ],
+  "subtotal": 12337.0,
+  "vat": 616.85,
+  "total": 12953.85
+}

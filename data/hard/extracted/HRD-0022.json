@@ -1,0 +1,45 @@
+{
+  "invoice_number": "TI-26-1354",
+  "vendor": "Pacheco Inc LLC",
+  "trn": "100395376724238",
+  "po_number": "PO-5022",
+  "invoice_date": "2026-05-23",
+  "due_date": "2026-07-22",
+  "payment_terms": "Net 60 days",
+  "currency": "AED",
+  "line_items": [
+    {
+      "description": "Laser Printer Toner Cartridge",
+      "quantity": 9.0,
+      "unit_price": 320.0,
+      "line_total": 2880.0
+    },
+    {
+      "description": "Whiteboard Markers (pack of 12)",
+      "quantity": 5.0,
+      "unit_price": 38.0,
+      "line_total": 190.0
+    },
+    {
+      "description": "Annual Software Support",
+      "quantity": 3.0,
+      "unit_price": 5200.0,
+      "line_total": 15600.0
+    },
+    {
+      "description": "Laptop Docking Station",
+      "quantity": 4.0,
+      "unit_price": 450.0,
+      "line_total": 1800.0
+    },
+    {
+      "description": "Cleaning Service (monthly)",
+      "quantity": 1.0,
+      "unit_price": 1800.0,
+      "line_total": 1800.0
+    }
+  ],
+  "subtotal": 22270.0,
+  "vat": 1113.5,
+  "total": 23383.5
+}
